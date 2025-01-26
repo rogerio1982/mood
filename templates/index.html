@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivações Diárias</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Minhas Motivações Diárias</h1>
+    <form method="POST" action="/add">
+        <label for="date">Data:</label><br>
+        <input type="date" name="date" id="date" required><br><br>
+
+        <label for="mood">Humor:</label><br>
+        <select name="mood" id="mood" required>
+            <option value="🙂">🙂 Alegre</option>
+            <option value="😢">😢 Triste</option>
+            <option value="😠">😠 Bravo</option>
+        </select><br><br>
+
+        <label for="note">Nota:</label><br>
+        <textarea name="note" id="note" rows="4"></textarea><br><br>
+
+        <button type="submit">Adicionar</button>
+    </form>
+
+    <h2>Registros:</h2>
+    <ul>
+        {% for motivation in motivations %}
+            <li>
+                {{ motivation.date }} - {{ motivation.mood }} - {{ motivation.note or "Sem nota" }}
+                <a href="/delete/{{ motivation.id }}">Excluir</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

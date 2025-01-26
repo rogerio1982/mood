@@ -1,15 +1,15 @@
-# Projeto Nome
+# psy mood
 
 System developed to monitor patients in psychology clinics. The app aims to record patients' daily emotions.
 ## Demonstração
 
-### Tela Principal
+### splash
 ![Tela Principal](tela.png)
 
-### Outra Tela
+### splash
 ![Outra Tela](tela2.png)
 
-## Como Usar
+## about
 
 1. Clone o repositório:
    ```bash
@@ -21,13 +21,13 @@ System developed to monitor patients in psychology clinics. The app aims to reco
    ```
 3. Siga as instruções para instalar as dependências e rodar o projeto.
 
-## Tecnologias Utilizadas
+## Tech
 
 - python
 - Flask
 - Sql
 
-## Licença
+## Licence
 
 Este projeto está licenciado sob a licença [MIT](LICENSE).
 

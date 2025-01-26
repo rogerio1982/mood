@@ -1,7 +1,6 @@
 # Projeto Nome
 
-Descrição breve do projeto. Explique o objetivo e o que ele resolve.
-
+System developed to monitor patients in psychology clinics. The app aims to record patients' daily emotions.
 ## Demonstração
 
 ### Tela Principal
